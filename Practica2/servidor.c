@@ -1,3 +1,4 @@
+//Funciones necesarias
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -8,10 +9,13 @@
 #include <string.h>
 #include <arpa/inet.h>
 
+
+//puerto en el que escucha y tamaño del bufer
 #define PORT 9999
 #define TAM_BUFFER 1024
 
 struct sockaddr_in server_address;
+//variables globales
 int sockfd, scfd;
 
 void procesarcliente(int socket){
