@@ -91,8 +91,8 @@ int main(){
     listen(sockfd, 10);
 
 
-    //Revisar
-    printf("Servidor esperando peticiones...");
+    //servidor listo, le meto un print pa saber que ha hecho hasta el listen y esta esperando respuestas
+    printf("Servidor listo, esperando peticiones...\n");
 
     //lo dejamos en bucle esperando a un cliente, ahi hace fork y sigue esperando
     while (1){
