@@ -17,7 +17,7 @@
 int main(int argc, char *argv[]) {
     if (argc != 2 && argc != 3){
         //si se pide algo mal, sale y muere
-        printf("Uso: %s IP_Servidor [fichero]\n", argv[0]);
+        printf("Uso: %s IP_Servidor [fichero] (por defecto es el index.html)\n", argv[0]);
         exit(1);
     }
     //creo variables y asigno la estructura esa
