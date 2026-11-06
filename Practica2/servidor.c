@@ -38,7 +38,6 @@ void procesarcliente(int socket){
     //escaneo lo que hay en el buffer (los 15 primeros son el metodo, los otros 255, la ruta)
 
     sscanf(buffer, "%15s %255s", metodo, ruta);
-s
     // ruta + 1 evita la "/" inicial: "/app.html" -> "app.html"
     //guardo en fd la ruta en formato lectura
     fd = open(ruta + 1, O_RDONLY);
