@@ -38,7 +38,7 @@ void procesarcliente(int socket){
     //escaneo lo que hay en el buffer (los 15 primeros son el metodo, los otros 255, la ruta)
 
     sscanf(buffer, "%15s %255s", metodo, ruta);
-
+s
     // ruta + 1 evita la "/" inicial: "/app.html" -> "app.html"
     //guardo en fd la ruta en formato lectura
     fd = open(ruta + 1, O_RDONLY);
@@ -79,7 +79,7 @@ int main(){
 
     //COnfigurar la estructura sockaddr_in, preparo la conexino con el servidor (dirIP:puerto...)
     server_address.sin_family = AF_INET;
-    server_address.sin_port = htons(PORT); //puerto en formato red
+    server_address.sin_port = htons(PORT); //puerto
     server_address.sin_addr.s_addr = htonl(INADDR_ANY); //acepta conexiones de cualquier direccion
 
     //HAcer un bind al puerto 9999
